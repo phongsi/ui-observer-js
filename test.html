@@ -1,0 +1,20 @@
+<html>
+ <head>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+   <script src="ui-observer.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){
+      $('.ui-observable').click(
+        function(e){
+          e.preventDefault();
+          e.stopPropagation();
+        }
+      );
+      $.uiObservable();
+     });
+   </script>
+  </head>
+  <body>
+    <div class='ui-observable'>Test text</div>
+  </body>
+</html>
